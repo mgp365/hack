@@ -37,7 +37,7 @@ env = MaoEnv()
 learner = DQNAgent(env.state_size, env.action_space, device=device)
 
 # Crear "agentes maestros". Estos son agentes basados en reglas predefinidas ("Greedy"), que actuarán de competidores del DQN.
-teachers = [GreedyRuleAgent(), GreedyRuleAgent()]  # Se configuran dos agentes basados en reglas.
+#teachers = [GreedyRuleAgent(), GreedyRuleAgent()]  # Se configuran dos agentes basados en reglas.
 
 # --- MODIFICACIÓN 1: Añadir una lista para guardar el historial de la pérdida ---
 loss_history = []
